@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  color: #FFFFFF;
+}
+
+.navbar-container {
+  background-color: #303030;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: center;  /* Horizontal Alignment */
+}
+
+.navbar {
+  width: 900px;
+
+  display: flex;
+  justify-content: space-between;  /* Horizontal Alignment */
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;  /* Horizontal Alignment */
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.banner-container {
+  background-color: #D6E9FE;
+  background-image: url("images/banner.jpeg");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;  /* Horizontal Alignment */
+}
+
+.banner {
+  width: 900px;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;  /* Horizontal Alignment */
+  align-items: center;  /* Vertical Alignment */
+  flex-direction: column;  /* Flex Container Direction */
+}
+
+.photo-grid-container {
+  background-color: #F0F0F0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-grid img {
+  margin: 10px 0;
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+}
