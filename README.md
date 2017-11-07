@@ -7,7 +7,7 @@ This is a simple HTML and CSS project to teach students how to lay out a web pag
 To get set up, clone this repository and open the `index.html` file in your browser
 
 ## Lesson Topics
-  * History
+  1. History
   * Introduction
   * Flex Containers and Flex Items
   * Horizontal Alignment
@@ -16,18 +16,20 @@ To get set up, clone this repository and open the `index.html` file in your brow
   * Rows vs. Columns
 
 ### History
-  * In the past, floats and the default box model were used for laying out web pages
-  * Floats are somewhat limiting (and are a bit of a hack)
+  * In the past, floats/table/inline-block were used for laying out web pages
+  * These are somewhat limiting (and are a bit of a hack)
 
 ### Introduction
-  <!-- CSS Native? -->
-  * Flexbox is a relatively new technology, but we're at a point where support is fairly widespread across browsers
+  * Flexbox is a new layout mode in CSS3
+  * Support is fairly widespread across browsers
   * It gives us control over alignment, direction, order, and size of our boxes
   * Used to define overall page structure
 
 ### Flex Containers and Flex Items
+  * Flexbox uses two types of boxes: Flex Containers and Flex Items
   * We manipulate the items we want to style (Flex Items) through the parent (Flex Containers)
-  <!-- * Only the direct children  -->
+  * Defining complex web pages with Flexbox is all about nesting boxes
+  * Flex containers can only position elements that are one level deep (their direct child elements)
 
 
 Enable Flexbox layout mode with the following **property** and **value**.
@@ -38,11 +40,7 @@ Enable Flexbox layout mode with the following **property** and **value**.
 }
 ```
 
-<!-- | Property     | Value        |
-| ------------ |:------------:|
-| display      | flex         | -->
-
-This tells the browser that everything in the container should be rendered with Flexbox instead of the default box model. Otherwise the browser will ignore all Flexbox properties.
+This tells the browser that everything in `.flex-container` should be rendered with Flexbox instead of the default box model. Otherwise the browser will ignore all Flexbox properties.
 
 ### Horizontal Alignment
   * To align Flex Items horizontally, use the `justify-content` property
@@ -68,7 +66,7 @@ Possible values include:
 | center       |
 | flex-start (top) |
 | flex-end (bottom)    |
-| stretch | Useful for equal height columns with a variable amount of content in each
+| stretch (Useful for equal height columns with a variable amount of content in each) |
 | baseline|
 
 ### Wrapping Flex Items
@@ -79,7 +77,17 @@ Possible values include:
 
 | Values       |
 | ------------ |
-| wrap       | Forces items that don't fit to get bumped to the next row
+| wrap (Forces items that don't fit to get bumped to the next row) |
 | nowrap   |
 
 ### Rows vs. Columns
+  * The `flex-direction` property allows you to control the axis and direction that the items are placed in a container
+
+Possible values include:
+
+| Values       |
+| ------------ |
+| row |
+| row-reverse   |
+| column   |
+| column-reverse   |
