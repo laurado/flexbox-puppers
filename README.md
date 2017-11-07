@@ -82,6 +82,8 @@ Possible values include:
 
 ### Rows vs. Columns
   * The `flex-direction` property allows you to control the axis and direction that the items are placed in a container
+  * This is important when building responsive layouts
+  * Typically, mobile view renders elements in columns and web view stacks items horizontally
 
 Possible values include:
 
