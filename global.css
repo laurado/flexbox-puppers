@@ -12,14 +12,6 @@
   padding: 20px 0;
 }
 
-.navbar {
-  width: 900px;
-}
-
-.login {
-  margin-left: 20px;
-}
-
 .banner-container {
   background-color: #D6E9FE;
   background-image: url("images/banner.jpeg");
@@ -29,20 +21,11 @@
   margin: auto;
 }
 
-.banner {
-  width: 900px;
-  height: 300px;
-}
-
 .photo-grid-container {
   background-color: #F0F0F0;
 }
 
-.photo-grid {
-  width: 900px;
-}
-
-.photo-grid img {
+.photo-grid-container img {
   margin: 10px 0;
   object-fit: cover;
   width: 280px;
